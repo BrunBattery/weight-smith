@@ -2,7 +2,7 @@
 // Centralized configuration for colors, sizes, and defaults
 
 // App version
-export const APP_VERSION = 'v1.0.1';
+export const APP_VERSION = 'v1.1.1';
 
 // Default available plates for each unit system
 export const DEFAULT_PLATES_KG = [1.25, 2.5, 5, 10, 15, 20, 25];
@@ -142,7 +142,7 @@ export const WARMUP_STYLE_LABELS: Record<WarmupStyle, string> = {
 export const WARMUP_STYLE_DESCRIPTIONS: Record<WarmupStyle, string> = {
   methodical: 'Many warmup sets - good for singles',
   average: 'Typical warmup - moderate jumps',
-  aggressive: 'Quickly get to work sets'
+  aggressive: 'Quickly get to work sets - good for rep work'
 };
 
 // Standard percentage/RPE chart for 1RM calculations

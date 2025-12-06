@@ -15,6 +15,8 @@ export interface DropdownProps<T> {
   renderSelected?: (value: T) => React.ReactNode;
   /** Additional className for the container */
   className?: string;
+  /** Open dropdown upward instead of downward */
+  openUpward?: boolean;
 }
 
 /**
@@ -26,7 +28,8 @@ export function Dropdown<T>({
   options,
   onChange,
   renderSelected,
-  className = ''
+  className = '',
+  openUpward = false
 }: DropdownProps<T>) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -71,7 +74,9 @@ export function Dropdown<T>({
           />
           
           {/* Dropdown menu */}
-          <div className="absolute top-full mt-2 w-full bg-[#242424] rounded-md shadow-lg border border-[#2f2f2f] overflow-hidden z-10">
+          <div className={`absolute w-full bg-[#242424] rounded-md shadow-lg border border-[#2f2f2f] overflow-hidden z-10 ${
+            openUpward ? 'bottom-full mb-2' : 'top-full mt-2'
+          }`}>
             {options.map((option, idx) => {
               const isSelected = option.value === value;
               return (

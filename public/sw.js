@@ -1,4 +1,4 @@
-const APP_VERSION = '1.0.1';
+const APP_VERSION = '1.1.1';
 const CACHE_NAME = `weight-smith-v${APP_VERSION}`;
 const BASE_PATH = '/';
 
@@ -12,7 +12,7 @@ const STATIC_ASSETS = [
 
 // Install event - cache static assets
 self.addEventListener('install', (event) => {
-  console.log('[Service Worker] Installing...');
+  console.log('[Service Worker] Installing...'); 
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then((cache) => {

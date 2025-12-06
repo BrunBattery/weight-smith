@@ -147,7 +147,7 @@ const PercentagesCard = memo(function PercentagesCard({
   plateColors: Record<number, { plate: string; text: string; bg: string; border: string }>;
   plateSizes: Record<number, number>;
 }) {
-  const [selectedPct, setSelectedPct] = useState<number | null>(null);
+  const [selectedPct, setSelectedPct] = useState<number | null>(100);
   const unit = isKg ? 'kgs' : 'lbs';
 
   const calculateWeight = (pct: number): number | null => {
@@ -992,6 +992,7 @@ function App() {
                 value={maxWeightMachineLevel}
                 options={maxWeightMachineOptions}
                 onChange={handleMaxWeightMachineChange}
+                openUpward
               />
             </div>
                 </>
@@ -1132,7 +1133,7 @@ function App() {
       </div>
 
       {/* Bottom Navigation Bar (Mobile only) */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-[#242424] border-t border-[#2f2f2f] z-30">
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-[#242424] border-t border-[#2f2f2f] z-30 pb-[env(safe-area-inset-bottom)]">
         <div className="flex justify-around items-center h-16">
           <button
             onClick={() => setActiveTab('plates')}
