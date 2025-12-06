@@ -148,7 +148,7 @@ const PercentagesCard = memo(function PercentagesCard({
   plateSizes: Record<number, number>;
 }) {
   const [selectedPct, setSelectedPct] = useState<number | null>(null);
-  const unit = isKg ? 'kg' : 'lb';
+  const unit = isKg ? 'kgs' : 'lbs';
 
   const calculateWeight = (pct: number): number | null => {
     if (!estimated1RM) return null;
@@ -264,7 +264,7 @@ const WarmupCard = memo(function WarmupCard({
   const [selectedSetIndex, setSelectedSetIndex] = useState(0);
   const [completedSets, setCompletedSets] = useState<Set<number>>(new Set());
 
-  const unit = isKg ? 'kg' : 'lb';
+  const unit = isKg ? 'kgs' : 'lbs';
   const minWeight = isMachine ? 0 : barbellWeight;
 
   // Calculate rounding step based on smallest available plate (times 2 for both sides)

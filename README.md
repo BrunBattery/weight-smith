@@ -8,10 +8,25 @@ A minimal web app for use by lifters. Built with modern web technologies and des
 
 ### 🔢 Plate Calculator
 - **Visual plate loading** - Color-coded plates showing exactly what to load
-- **Barbell or machine mode** - Toggle between 45lb barbell or machine pin loading
-- **Smart rounding** - Automatically rounds to nearest 2.5lb increment
-- **Interactive controls** - Slider, +/- buttons, or direct input
-- **Real-time breakdown** - See exactly which plates to use per side
+- **Barbell or machine mode** - Toggle between barbell or machine/cable stack
+- **KG/LBs support** - Switch units with automatic weight conversion
+- **Smart rounding** - Rounds to nearest loadable increment
+- **Customizable plates** - Select which plates you have available
+
+### 📊 1RM, RPE & Percentages
+- **Estimated 1RM** - Enter weight × reps, get your estimated max
+- **Percentage chart** - See weights for 65-100% with RPE estimates
+- **Tap to preview** - Select any percentage to see plate breakdown
+
+### 🔥 Warmup Generator
+- **Three styles** - Methodical, Standard, or Aggressive progression
+- **Auto-calculated sets** - Weights and reps based on your working weight
+- **Progress tracking** - Mark sets complete as you go
+
+### ⚙️ Settings
+- **Barbell options** - 45lb, 35lb, 15lb bars (and kg equivalents)
+- **Plate selection** - Toggle individual plates on/off based on availability
+- **Persistent storage** - All settings saved locally
 
 ---
 
