@@ -1,6 +1,6 @@
 {
-  "name": "Weight Smith - Plate Calculator",
-  "short_name": "Weight Smith",
+  "name": "WeightSmith",
+  "short_name": "WeightSmith",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,8 +15,8 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#C6A85B",
-  "background_color": "#1b1b1b",
+  "theme_color": "#1a1a1a",
+  "background_color": "#1a1a1a",
   "display": "standalone",
   "start_url": "/",
   "scope": "/"
