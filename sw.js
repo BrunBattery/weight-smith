@@ -1,4 +1,4 @@
-const APP_VERSION = '1.0.0';
+const APP_VERSION = '1.0.1';
 const CACHE_NAME = `weight-smith-v${APP_VERSION}`;
 const BASE_PATH = '/';
 
