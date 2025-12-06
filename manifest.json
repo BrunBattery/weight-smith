@@ -1,0 +1,27 @@
+{
+  "name": "WeightSmith",
+  "short_name": "WeightSmith",
+  "description": "Calculate optimal plate loading for barbells and machines",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#C6A85B",
+  "background_color": "#1b1b1b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "fitness", "utilities"]
+}
+
