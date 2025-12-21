@@ -175,7 +175,6 @@ const PercentagesCard = memo(function PercentagesCard({
         <div className="text-2xl min-[390px]:text-3xl font-bold text-[#C6A85B]">
           {estimated1RM !== null ? estimated1RM : '–'} <span className="text-base font-normal text-[#a89984]">{unit}</span>
         </div>
-        <div className="hidden min-[390px]:block text-xs text-[#665c54] mt-1">Tap percentage for weight preview</div>
       </div>
 
       {/* Legend */}

@@ -2,7 +2,7 @@
 // Centralized configuration for colors, sizes, and defaults
 
 // App version
-export const APP_VERSION = 'v1.1.1';
+export const APP_VERSION = 'v1.1.2';
 
 // Default available plates for each unit system
 export const DEFAULT_PLATES_KG = [1.25, 2.5, 5, 10, 15, 20, 25];
