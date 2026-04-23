@@ -1,8 +1,8 @@
 // WeightSmith Constants
 // Centralized configuration for colors, sizes, and defaults
 
-// App version
-export const APP_VERSION = 'v1.1.2';
+// App version (sourced from package.json via Vite define)
+export const APP_VERSION = `v${__APP_VERSION__}`;
 
 // Default available plates for each unit system
 export const DEFAULT_PLATES_KG = [1.25, 2.5, 5, 10, 15, 20, 25];

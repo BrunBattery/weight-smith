@@ -25,9 +25,8 @@
     "noUncheckedSideEffectImports": true,
 
     /* Path aliases */
-    "baseUrl": ".",
     "paths": {
-      "@/DesignReview": ["src/DesignReview.stub.tsx"]
+      "@/DesignReview": ["./src/DesignReview.stub.tsx"]
     }
   },
   "include": ["src"]

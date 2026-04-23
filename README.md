@@ -4,7 +4,7 @@
 
 Built with React, TypeScript, and Tailwind CSS. Mobile-first, installable, works offline.
 
-![WeightSmith Screenshot](src/assets/screenshot.png)
+![WeightSmith Screenshot](assets/screenshot.png)
 
 ---
 
@@ -22,7 +22,7 @@ Built with React, TypeScript, and Tailwind CSS. Mobile-first, installable, works
 - Plate breakdown for any percentage
 
 ### 🔥 Warmup Generator
-- Three progression styles (Methodical, Average, Aggressive)
+- Three progression styles (Methodical, Standard, Aggressive)
 - Auto-calculated warmup sets
 - Track completion as you go
 
