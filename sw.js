@@ -1,11 +1,11 @@
-const APP_VERSION = '1.1.2';
+const APP_VERSION = '1.1.3';
 const CACHE_NAME = `weight-smith-v${APP_VERSION}`;
 const BASE_PATH = '/';
 
 const STATIC_ASSETS = [
   BASE_PATH,
   BASE_PATH + 'index.html',
-  BASE_PATH + 'manifest.json',
+  BASE_PATH + 'site.webmanifest',
   BASE_PATH + 'web-app-manifest-192x192.png',
   BASE_PATH + 'web-app-manifest-512x512.png'
 ];
