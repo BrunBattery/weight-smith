@@ -20,7 +20,7 @@ export const BarbellVisualization = memo(function BarbellVisualization({
         {[...platesOneSide].reverse().map((plate, idx) => (
           <div
             key={`left-${idx}`}
-            className="rounded-sm mx-px"
+            className="rounded-xs mx-px"
             style={{
               width: 6 * scale,
               height: (plateSizes[plate] || 20) * scale,
@@ -42,7 +42,7 @@ export const BarbellVisualization = memo(function BarbellVisualization({
         {platesOneSide.map((plate, idx) => (
           <div
             key={`right-${idx}`}
-            className="rounded-sm mx-px"
+            className="rounded-xs mx-px"
             style={{
               width: 6 * scale,
               height: (plateSizes[plate] || 20) * scale,

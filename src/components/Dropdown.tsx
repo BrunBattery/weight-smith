@@ -56,7 +56,7 @@ export function Dropdown<T>({
     <div className={`relative ${className}`}>
       <button
         onClick={toggleOpen}
-        className="w-full bg-[#2f2f2f] text-[#d5c4a1] px-4 py-2 rounded-md font-medium hover:bg-[#313131] focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:outline-none transition-colors flex items-center justify-between"
+        className="w-full bg-[#2f2f2f] text-[#d5c4a1] px-4 py-2 rounded-md font-medium hover:bg-[#313131] focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:outline-hidden transition-colors flex items-center justify-between"
       >
         <span>{displayValue}</span>
         <ChevronDown 

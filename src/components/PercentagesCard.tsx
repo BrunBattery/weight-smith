@@ -68,7 +68,7 @@ export const PercentagesCard = memo(function PercentagesCard({
             <button
               key={pct}
               onClick={() => setSelectedPct(isSelected ? null : pct)}
-              className={`w-full grid grid-cols-3 gap-1 rounded py-1.5 min-[390px]:py-2 text-center transition-colors ${
+              className={`w-full grid grid-cols-3 gap-1 rounded-sm py-1.5 min-[390px]:py-2 text-center transition-colors ${
                 isSelected
                   ? 'bg-[#3a3a3a] ring-2 ring-[#C6A85B]'
                   : 'bg-[#2a2a2a] hover:bg-[#333]'

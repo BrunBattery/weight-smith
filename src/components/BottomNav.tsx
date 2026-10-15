@@ -13,7 +13,7 @@ export function BottomNav({
       <div className="flex justify-around items-center h-16">
         <button
           onClick={() => onTabChange('plates')}
-          className={`flex items-center justify-center flex-1 h-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#C6A85B] ${
+          className={`flex items-center justify-center flex-1 h-full transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#C6A85B] ${
             activeTab === 'plates' ? 'text-[#C6A85B]' : 'text-[#666666] hover:text-[#a89984]'
           }`}
         >
@@ -21,7 +21,7 @@ export function BottomNav({
         </button>
         <button
           onClick={() => onTabChange('warmup')}
-          className={`flex items-center justify-center flex-1 h-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#C6A85B] ${
+          className={`flex items-center justify-center flex-1 h-full transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#C6A85B] ${
             activeTab === 'warmup' ? 'text-[#C6A85B]' : 'text-[#666666] hover:text-[#a89984]'
           }`}
         >
@@ -29,7 +29,7 @@ export function BottomNav({
         </button>
         <button
           onClick={() => onTabChange('percentages')}
-          className={`flex items-center justify-center flex-1 h-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#C6A85B] ${
+          className={`flex items-center justify-center flex-1 h-full transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#C6A85B] ${
             activeTab === 'percentages' ? 'text-[#C6A85B]' : 'text-[#666666] hover:text-[#a89984]'
           }`}
         >
@@ -37,7 +37,7 @@ export function BottomNav({
         </button>
         <button
           onClick={() => onTabChange('settings')}
-          className={`flex items-center justify-center flex-1 h-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#C6A85B] ${
+          className={`flex items-center justify-center flex-1 h-full transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[#C6A85B] ${
             activeTab === 'settings' ? 'text-[#C6A85B]' : 'text-[#666666] hover:text-[#a89984]'
           }`}
         >

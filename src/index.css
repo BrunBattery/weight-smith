@@ -1,8 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Include the optional, gitignored design review during local development. */
+@source "./**/*.{js,ts,jsx,tsx}";
+
+@theme {
+  --font-sans: 'Roboto', sans-serif;
+}
 
 @layer base {
+  /* Preserve v3's interactive cursor behavior. */
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
   html, body {
     font-family: 'Roboto', sans-serif;
     background-color: #1a1a1a;

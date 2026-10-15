@@ -68,7 +68,7 @@ export function SettingsTab({
           <button
             key={tab.id}
             onClick={() => onSettingsTabChange(tab.id)}
-            className={`px-4 py-2 text-sm font-medium transition-colors relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:ring-inset ${
+            className={`px-4 py-2 text-sm font-medium transition-colors relative focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:ring-inset ${
               settingsTab === tab.id ? 'text-[#C6A85B]' : 'text-[#a89984] hover:text-[#d5c4a1]'
             }`}
           >
@@ -91,7 +91,7 @@ export function SettingsTab({
             <div className="flex bg-[#2f2f2f] rounded-md p-1">
               <button
                 onClick={() => onUnitToggle(false)}
-                className={`flex-1 px-4 py-2 rounded text-sm font-semibold transition-colors focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:outline-none ${
+                className={`flex-1 px-4 py-2 rounded-sm text-sm font-semibold transition-colors focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:outline-hidden ${
                   !isKg
                     ? 'bg-[#3a3a3a] text-[#C6A85B] border-2 border-[#C6A85B]'
                     : 'text-[#665c54] hover:text-[#a89984]'
@@ -101,7 +101,7 @@ export function SettingsTab({
               </button>
               <button
                 onClick={() => onUnitToggle(true)}
-                className={`flex-1 px-4 py-2 rounded text-sm font-semibold transition-colors focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:outline-none ${
+                className={`flex-1 px-4 py-2 rounded-sm text-sm font-semibold transition-colors focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:outline-hidden ${
                   isKg
                     ? 'bg-[#3a3a3a] text-[#C6A85B] border-2 border-[#C6A85B]'
                     : 'text-[#665c54] hover:text-[#a89984]'
@@ -182,7 +182,7 @@ export function SettingsTab({
                       );
                     }
                   }}
-                  className={`rounded-sm transition-all ${
+                  className={`rounded-xs transition-all ${
                     isSelected ? '' : 'opacity-20'
                   }`}
                   style={{
@@ -240,7 +240,7 @@ export function SettingsTab({
                 setAvailablePlatesLbs([...DEFAULT_PLATES_LBS]);
               }
             }}
-            className="w-full mt-4 px-4 py-2.5 text-sm font-medium text-[#a89984] bg-transparent hover:text-[#d5c4a1] rounded-md border border-[#504945] hover:border-[#665c54] transition-colors focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:outline-none"
+            className="w-full mt-4 px-4 py-2.5 text-sm font-medium text-[#a89984] bg-transparent hover:text-[#d5c4a1] rounded-md border border-[#504945] hover:border-[#665c54] transition-colors focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:outline-hidden"
           >
             Reset to defaults
           </button>

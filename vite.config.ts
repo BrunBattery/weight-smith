@@ -1,20 +1,21 @@
 import { defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
-import { existsSync, readFileSync, writeFileSync } from 'fs'
-import { resolve } from 'path'
+import tailwindcss from '@tailwindcss/vite'
+import { existsSync, readFileSync, writeFileSync } from 'node:fs'
+import { resolve } from 'node:path'
 
 // Check if full DesignReview exists (gitignored, local dev only)
-const designReviewDevPath = resolve(__dirname, 'src/DesignReview.dev.tsx')
+const designReviewDevPath = resolve(import.meta.dirname, 'src/DesignReview.dev.tsx')
 const designReviewExists = existsSync(designReviewDevPath)
 
 // Single source of truth for app version
-const pkg = JSON.parse(readFileSync(resolve(__dirname, 'package.json'), 'utf-8'))
+const pkg = JSON.parse(readFileSync(resolve(import.meta.dirname, 'package.json'), 'utf-8'))
 const APP_VERSION: string = pkg.version
 
 // Substitute __APP_VERSION__ placeholder in public/sw.js at build time
 // and serve a substituted version during dev.
 function swVersionPlugin(): Plugin {
-  const swPath = resolve(__dirname, 'public/sw.js')
+  const swPath = resolve(import.meta.dirname, 'public/sw.js')
   const substitute = (src: string) => src.replace(/__APP_VERSION__/g, APP_VERSION)
   return {
     name: 'sw-version-substitute',
@@ -30,7 +31,7 @@ function swVersionPlugin(): Plugin {
       })
     },
     closeBundle() {
-      const outPath = resolve(__dirname, 'dist/sw.js')
+      const outPath = resolve(import.meta.dirname, 'dist/sw.js')
       if (existsSync(outPath)) {
         writeFileSync(outPath, substitute(readFileSync(outPath, 'utf-8')))
       }
@@ -40,7 +41,7 @@ function swVersionPlugin(): Plugin {
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), swVersionPlugin()],
+  plugins: [react(), tailwindcss(), swVersionPlugin()],
   base: '/',
   define: {
     __APP_VERSION__: JSON.stringify(APP_VERSION),
@@ -49,8 +50,8 @@ export default defineConfig({
     alias: {
       // Auto-resolve DesignReview to dev version if it exists, otherwise stub
       '@/DesignReview': designReviewExists
-        ? resolve(__dirname, 'src/DesignReview.dev.tsx')
-        : resolve(__dirname, 'src/DesignReview.stub.tsx'),
+        ? resolve(import.meta.dirname, 'src/DesignReview.dev.tsx')
+        : resolve(import.meta.dirname, 'src/DesignReview.stub.tsx'),
     },
   },
 })

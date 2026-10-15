@@ -75,7 +75,7 @@ export function PlateCalculatorTab({
             <div className="flex items-center">
               <button
                 onClick={() => handleWeightChange(-weightIncrement)}
-                className="bg-[#2f2f2f] hover:bg-[#313131] focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:outline-none rounded-md w-10 h-10 flex items-center justify-center transition-colors flex-shrink-0"
+                className="bg-[#2f2f2f] hover:bg-[#313131] focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:outline-hidden rounded-md w-10 h-10 flex items-center justify-center transition-colors shrink-0"
               >
                 <Minus size={18} className="text-[#d5c4a1]" />
               </button>
@@ -90,13 +90,13 @@ export function PlateCalculatorTab({
                     }
                   }}
                   onBlur={handleInputBlur}
-                  className="w-[92px] text-3xl font-semibold text-[#C6A85B] text-center bg-transparent border-b-2 border-[#2f2f2f] focus:border-[#C6A85B] outline-none"
+                  className="w-[92px] text-3xl font-semibold text-[#C6A85B] text-center bg-transparent border-b-2 border-[#2f2f2f] focus:border-[#C6A85B] outline-hidden"
                 />
                 <span className="text-xs text-[#a89984]">{isKg ? 'kgs' : 'lbs'}</span>
               </div>
               <button
                 onClick={() => handleWeightChange(weightIncrement)}
-                className="bg-[#2f2f2f] hover:bg-[#313131] focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:outline-none rounded-md w-10 h-10 flex items-center justify-center transition-colors flex-shrink-0"
+                className="bg-[#2f2f2f] hover:bg-[#313131] focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:outline-hidden rounded-md w-10 h-10 flex items-center justify-center transition-colors shrink-0"
               >
                 <Plus size={18} className="text-[#d5c4a1]" />
               </button>
@@ -131,7 +131,7 @@ export function PlateCalculatorTab({
                   setReps(newReps);
                   setRepsInput(newReps.toString());
                 }}
-                className="bg-[#2f2f2f] hover:bg-[#313131] focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:outline-none rounded-md w-10 h-10 flex items-center justify-center transition-colors flex-shrink-0"
+                className="bg-[#2f2f2f] hover:bg-[#313131] focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:outline-hidden rounded-md w-10 h-10 flex items-center justify-center transition-colors shrink-0"
               >
                 <Minus size={18} className="text-[#d5c4a1]" />
               </button>
@@ -147,7 +147,7 @@ export function PlateCalculatorTab({
                     }
                   }}
                   onBlur={handleRepsInputBlur}
-                  className="w-16 text-3xl font-semibold text-[#d4534f] text-center bg-transparent border-b-2 border-[#2f2f2f] focus:border-[#d4534f] outline-none placeholder:text-[#665c54]"
+                  className="w-16 text-3xl font-semibold text-[#d4534f] text-center bg-transparent border-b-2 border-[#2f2f2f] focus:border-[#d4534f] outline-hidden placeholder:text-[#665c54]"
                 />
                 <span className="text-xs text-[#a89984]">reps</span>
               </div>
@@ -157,7 +157,7 @@ export function PlateCalculatorTab({
                   setReps(newReps);
                   setRepsInput(newReps.toString());
                 }}
-                className="bg-[#2f2f2f] hover:bg-[#313131] focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:outline-none rounded-md w-10 h-10 flex items-center justify-center transition-colors flex-shrink-0"
+                className="bg-[#2f2f2f] hover:bg-[#313131] focus-visible:ring-2 focus-visible:ring-[#C6A85B] focus-visible:outline-hidden rounded-md w-10 h-10 flex items-center justify-center transition-colors shrink-0"
               >
                 <Plus size={18} className="text-[#d5c4a1]" />
               </button>
@@ -176,7 +176,7 @@ export function PlateCalculatorTab({
         {/* 1RM Warning - Blue Info Alert */}
         {reps && reps > 10 && (
           <div className="flex items-start gap-2 bg-[#24292f] border border-[#28343d] rounded-md p-3 mb-4">
-            <Info size={16} className="text-[#5a9bb8] flex-shrink-0 mt-0.5" />
+            <Info size={16} className="text-[#5a9bb8] shrink-0 mt-0.5" />
             <span className="text-sm text-[#5a9bb8]">
               1RM calculations inaccurate 11+ reps
             </span>

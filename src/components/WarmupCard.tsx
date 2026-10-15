@@ -137,7 +137,7 @@ export const WarmupCard = memo(function WarmupCard({
             <button
               key={index}
               onClick={() => handleSetClick(index)}
-              className={`w-full flex items-center gap-2 px-2 min-[390px]:px-3 py-1 min-[390px]:py-1.5 rounded transition-colors text-left ${
+              className={`w-full flex items-center gap-2 px-2 min-[390px]:px-3 py-1 min-[390px]:py-1.5 rounded-sm transition-colors text-left ${
                 isSelected
                   ? 'bg-[#C6A85B]/20 border-2 border-[#C6A85B]'
                   : isCompleted
@@ -146,7 +146,7 @@ export const WarmupCard = memo(function WarmupCard({
               }`}
             >
               {/* Set number or check */}
-              <span className={`w-5 h-5 min-[390px]:w-6 min-[390px]:h-6 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0 ${
+              <span className={`w-5 h-5 min-[390px]:w-6 min-[390px]:h-6 rounded-full flex items-center justify-center text-xs font-bold shrink-0 ${
                 isCompleted
                   ? 'bg-[#4aba4a] text-[#1b1b1b]'
                   : isWorking

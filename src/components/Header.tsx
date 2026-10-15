@@ -27,7 +27,7 @@ export function Header({
         <div className="hidden md:flex items-center gap-2 ml-4">
           <button
             onClick={() => onTabChange('plates')}
-            className={`p-2 rounded-md transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A85B] ${
+            className={`p-2 rounded-md transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#C6A85B] ${
               activeTab === 'plates' ? 'text-[#C6A85B]' : 'text-[#666666] hover:text-[#a89984]'
             }`}
             title="Load"
@@ -36,7 +36,7 @@ export function Header({
           </button>
           <button
             onClick={() => onTabChange('warmup')}
-            className={`p-2 rounded-md transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A85B] ${
+            className={`p-2 rounded-md transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#C6A85B] ${
               activeTab === 'warmup' ? 'text-[#C6A85B]' : 'text-[#666666] hover:text-[#a89984]'
             }`}
             title="Warmup"
@@ -45,7 +45,7 @@ export function Header({
           </button>
           <button
             onClick={() => onTabChange('percentages')}
-            className={`p-2 rounded-md transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A85B] ${
+            className={`p-2 rounded-md transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#C6A85B] ${
               activeTab === 'percentages' ? 'text-[#C6A85B]' : 'text-[#666666] hover:text-[#a89984]'
             }`}
             title="Percentages"
@@ -54,7 +54,7 @@ export function Header({
           </button>
           <button
             onClick={() => onTabChange('settings')}
-            className={`p-2 rounded-md transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#C6A85B] ${
+            className={`p-2 rounded-md transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#C6A85B] ${
               activeTab === 'settings' ? 'text-[#C6A85B]' : 'text-[#666666] hover:text-[#a89984]'
             }`}
             title="Settings"
